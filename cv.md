@@ -1,5 +1,5 @@
 # Alina Vagapova
-Contacts:
+**Contacts:**
 <br> e-mail:  alinavagapova13@gmail.com
 <br> discord:  blansh (@Blansh-05)
 
