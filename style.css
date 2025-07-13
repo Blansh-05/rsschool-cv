@@ -19,6 +19,7 @@
 * {
   box-sizing: border-box;
   font-family: Montserrat, sans-serif;
+  font-size: 20px;
 }
 
 .nav-list {
@@ -31,14 +32,15 @@
 }
 
 a:hover {
-  font-size: 18px;
+  font-size: 20px;
   transition: 0.3s;
-  color: #4d2323;
+  color: rgb(150, 7, 7);
 }
 
 .nav-item > a {
   text-decoration: none;
-  color: rgb(14, 54, 11);
+  color: rgb(255, 255, 255);
+  font-size: 20px;
 }
 
 .nav-link {
@@ -54,23 +56,44 @@ body {
   flex-direction: column;
 }
 
+.section-title-name {
+  color: #252525;
+  font-size: 68px;
+}
+
 .section-title {
-  color: #4d2323;
+  color: rgb(37, 37, 37);
+  font-size: 28px;
+}
+
+.section-intro {
+  display: flex;
+  color: rgb(37, 37, 37);
+  font-size: 28px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px 200px;
 }
 
 .header {
-  border: 1px solid red;
+  background: linear-gradient(
+      rgba(35, 165, 177, 0.2) 40%,
+      rgba(255, 255, 255, 0) 40%
+    ),
+    linear-gradient(rgba(14, 62, 184, 0.7), rgba(255, 255, 255, 0));
+  background-size: 1em 1em, 100%;
+  background-color: rgb(20, 21, 34);
 }
 
 .main {
-  border: 1px solid red;
   flex: 1;
 }
 
 .footer {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
+  background-color: rgb(12, 45, 130);
+  color: aliceblue;
 }
 
 .footer-container {
@@ -79,7 +102,7 @@ body {
   max-width: 1440px;
   align-items: center;
   justify-content: center;
-  gap: 30px;
+  gap: 60px;
 }
 
 .main-container {
@@ -87,6 +110,7 @@ body {
   flex-wrap: wrap;
   max-width: 1440px;
   margin: 0 auto;
+  padding: 50px;
 }
 
 .section {
@@ -100,10 +124,20 @@ body {
 }
 
 .avatar {
-  width: 200px;
+  width: 300px;
+  border-radius: 20%;
 }
 
 .RS {
   width: 100px;
   height: 100%;
+}
+
+.introduction {
+  order: 2;
+}
+
+.link-git {
+  color: aliceblue;
+  text-decoration: none;
 }
