@@ -57,43 +57,43 @@ body {
 }
 
 .section-title-name {
-  color: #252525;
-  font-size: 68px;
+  color: rgb(228, 77, 225);
+  font-size: 50px;
 }
 
 .section-title {
-  color: rgb(37, 37, 37);
+  color: rgb(228, 77, 225);
   font-size: 28px;
+  margin-top: 0;
 }
 
 .section-intro {
   display: flex;
-  color: rgb(37, 37, 37);
-  font-size: 28px;
+  color: rgb(0, 0, 0);
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px 200px;
+  padding: 20px 0;
 }
 
 .header {
-  background: linear-gradient(
-      rgba(35, 165, 177, 0.2) 40%,
-      rgba(255, 255, 255, 0) 40%
-    ),
-    linear-gradient(rgba(14, 62, 184, 0.7), rgba(255, 255, 255, 0));
+  background-color: rgb(228, 77, 225);
   background-size: 1em 1em, 100%;
-  background-color: rgb(20, 21, 34);
+
+  padding: 10px 0;
 }
 
 .main {
   flex: 1;
+  padding-bottom: 40px;
 }
 
 .footer {
   display: flex;
   justify-content: center;
-  background-color: rgb(12, 45, 130);
+  background-color: rgb(130, 46, 129);
   color: aliceblue;
+  padding: 30px 0;
 }
 
 .footer-container {
@@ -111,10 +111,15 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   padding: 50px;
+  gap: 10px;
 }
 
 .section {
-  width: 50%;
+  width: 45%;
+  border: 1px solid rgb(213, 210, 210);
+  border-radius: 15px;
+  padding: 25px;
+  background-color: white;
 }
 
 @media (max-width: 768px) {
@@ -125,7 +130,7 @@ body {
 
 .avatar {
   width: 300px;
-  border-radius: 20%;
+  border-radius: 30px;
 }
 
 .RS {
@@ -135,9 +140,48 @@ body {
 
 .introduction {
   order: 2;
+  padding-top: 50px;
+}
+
+.introduction > p {
+  font-size: 30px;
 }
 
 .link-git {
-  color: aliceblue;
+  color: rgb(255, 255, 255);
   text-decoration: none;
+}
+
+.code {
+  padding: 10px;
+  background-color: rgb(245, 245, 245);
+  border-radius: 5px;
+}
+
+p {
+  margin: 0;
+}
+
+ol {
+  margin-bottom: 0px;
+}
+
+pre {
+  margin: 0;
+}
+
+html {
+  --s: 150px;
+  --c1: #ffffff;
+  --c2: #fff5fe;
+
+  --_g: var(--c1) 0% 5%, var(--c2) 6% 15%, var(--c1) 16% 25%, var(--c2) 26% 35%,
+    var(--c1) 36% 45%, var(--c2) 46% 55%, var(--c1) 56% 65%, var(--c2) 66% 75%,
+    var(--c1) 76% 85%, var(--c2) 86% 95%, #0000 96%;
+  background: radial-gradient(50% 50% at 100% 0, var(--_g)),
+    radial-gradient(50% 50% at 0 100%, var(--_g)),
+    radial-gradient(50% 50%, var(--_g)),
+    radial-gradient(50% 50%, var(--_g)) calc(var(--s) / 2) calc(var(--s) / 2)
+      var(--c1);
+  background-size: var(--s) var(--s);
 }
